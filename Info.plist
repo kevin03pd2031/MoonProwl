@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>MoonProwl Browser</string>
+    <key>CFBundleDisplayName</key>
+    <string>MoonProwl Browser</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.kevinc.moonprowl</string>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleExecutable</key>
+    <string>MoonProwlBrowser</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>12.0</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyright (c) 2026 Kevin Chen. Free for personal, non-commercial use only.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Websites you visit may request camera access. Quoin Privacy Browser always asks you first and never enables it by default.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Websites you visit may request microphone access. Quoin Privacy Browser always asks you first and never enables it by default.</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+</dict>
+</plist>
