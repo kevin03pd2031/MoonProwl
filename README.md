@@ -27,9 +27,6 @@ privacy-oriented defaults and no telemetry or network calls back to a server.
 
 HTTPS-Only mode was removed — plaintext http:// loads with no blocking.
 
-## Installing
-Go to the official website: https://browser.html-5.me/
-
 ## Building
 
 Requires macOS with Xcode tools installed (for `swiftc`).

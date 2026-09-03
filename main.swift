@@ -2586,10 +2586,9 @@ final class MaterialDownloadRow: NSView {
         // without a dark theme stay as-is — standard browser behavior, not a forced invert.
         // The web view stays transparent so the black loading backdrop shows through.
         webView.appearance = NSAppearance(named: dark ? .darkAqua : .aqua)
-        // We advertise the system appearance (above) so sites that support dark mode
-        // switch automatically. We intentionally do NOT inject a page background —
-        // that would force black onto sites lacking their own. Loading color comes
-        // from the backdrop behind the transparent web view.
+        // Reload so already-rendered content re-renders under the new color scheme.
+        // Without this, the page keeps the old theme until a manual refresh.
+        webView.reload()
     }
 
     func updateThemeIcon(_ dark: Bool) {
