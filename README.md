@@ -7,8 +7,11 @@ privacy-oriented defaults and no telemetry or network calls back to a server.
 
 - macOS desktop app, built from a single `main.swift`.
 - No account, no sync, no analytics.
-- Default-protective settings that apply for the session only (they reset when
-  you quit).
+
+## Downloads
+
+- **Website:** https://browser.html-5.me
+- **Direct download (zip):** distributed via the website (see above).
 
 ## Default settings
 

@@ -1132,6 +1132,19 @@ final class Tab: NSObject, WKUIDelegate, WKNavigationDelegate, WKScriptMessageHa
         a.beginSheetModal(for: owner.window) { r in completionHandler(r == .alertFirstButtonReturn) }
     }
 
+    // File upload / picker: WebKit calls this when a site triggers <input type="file">.
+    // Without it, the picker never opens and file selection silently does nothing.
+    func webView(_ webView: WKWebView, runOpenPanelWith parameters: WKOpenPanelParameters,
+                 initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping ([URL]?) -> Void) {
+        let panel = NSOpenPanel()
+        panel.allowsMultipleSelection = parameters.allowsMultipleSelection
+        panel.canChooseDirectories = parameters.allowsDirectories
+        panel.canChooseFiles = true
+        panel.begin { result in
+            completionHandler(result == .OK ? panel.urls : nil)
+        }
+    }
+
     static let pwScript = """
     (function(){
       // App-controlled page styling: blue text-selection highlight, and a
