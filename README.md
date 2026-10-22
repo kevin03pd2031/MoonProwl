@@ -55,9 +55,7 @@ downloaded app, so step 1 or 2 is needed for the first launch.
 
 ## License
 
-MIT. See `LICENSE`. Free for personal, non-commercial use only.
-Commercial use, redistribution of modified versions, and sublicensing are not
-permitted under the current terms.
+MIT. See `LICENSE`. 
 
 ## Source
 
